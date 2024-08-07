@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kexin Zhang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #000000;
+        }
+        header {
+            padding: 20px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 900px;
+            margin: auto;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #040404;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav ul li a.active {
+            color: #0a4202;
+        }
+        nav ul li a:hover {
+            color: #0a4202;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .about-me {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .about-me .text {
+            flex: 1;
+        }
+        .about-me .text h2 {
+            font-size: 2em;
+        }
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            margin-left: 20px;
+            object-fit: cover;
+        }
+        .contact-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .contact-icons a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.5em;
+        }
+        .projects {
+            margin-bottom: 40px;
+        }
+        .projects h2 {
+            text-align: left;
+        }
+        .project {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+        .project img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .project-details {
+            flex: 1;
+        }
+        .project-details h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+        .project-details p {
+            margin: 5px 0;
+        }
+        .project-details .authors {
+            color: #000000;
+        }
+        .project-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .project-buttons a {
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #333;
+            padding: 5px 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .project-buttons a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        .abstract {
+            display: none;
+            border: 1px dashed #333;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="about-me">
+            <div class="text">
+                <h2>Kexin Zhang</h2>
+                <p>Hello! I am a PhD student in Computer Sciences at the University of Wisconsin-Madison, advised by Yuhang Zhao. My research interests include Human-Computer Interaction (HCI), accessibility, and AR/VR. </p>
+                <p>Previsouly, </p>
+                <div class="contact-icons">
+                    <a href="mailto:kexinzhang@example.com"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <img src="https://via.placeholder.com/200" alt="Kexin Zhang" class="profile-pic">
+        </section>
+        <section id="projects" class="projects">
+            <h2>Publications</h2>
+            <h3><italic>Full paper</italic></h3>
+            <div class="project">
+                <img src="https://via.placeholder.com/150" alt="Project 1">
+                <div>
+                    <div class="project-details">
+                        <h3>Exploring the Design Space of Optical See-through AR Head-Mounted Displays to Support First Responders in the Field.</h3>
+                        <p class="authors"><b>Kexin Zhang</b>, Brianna Cochran, Ruijia Chen, Lance Hartung, Bryce Sprecher, Ross Tredinnick, Kevin Ponto, Suman Banerjee, Yuhang Zhao.</p>
+                        <p>CHI 2024</p>
+                        <div class="project-buttons">
+                            <a href="#" class="abs-button">abstract</a>
+                            <a href="https://dl.acm.org/doi/full/10.1145/3613904.3642195">doi</a>
+                        </div>
+                    </div>
+                    <div class="abstract">
+                        First responders (FRs) navigate hazardous, unfamiliar environments in the field (e.g., mass-casualty incidents), making life-changing decisions in a split second. AR head-mounted displays (HMDs) have shown promise in supporting them due to its capability of recognizing and augmenting the challenging environments in a hands-free manner. However, the design space have not been thoroughly explored by involving various FRs who serve different roles (e.g., firefighters, law enforcement) but collaborate closely in the field. We interviewed 26 first responders in the field who experienced a state-of-the-art optical-see-through AR HMD, as well as its interaction techniques and four types of AR cues (i.e., overview cues, directional cues, highlighting cues, and labeling cues), soliciting their first-hand experiences, design ideas, and concerns. Our study revealed both generic and role-specific preferences and needs for AR hardware, interactions, and feedback, as well as identifying desired AR designs tailored to urgent, risky scenarios (e.g., affordance augmentation to facilitate fast and safe action). While acknowledging the value of AR HMDs, concerns were also raised around trust, privacy, and proper integration with other equipment. Finally, we derived comprehensive and actionable design guidelines to inform future AR systems for in-field FRs.
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/150" alt="Project 1">
+                <div>
+                    <div class="project-details">
+                        <h3>A diary study in social virtual reality: Impact of avatars with disability signifiers on the social experiences of people with disabilities.</h3>
+                        <p class="authors"><b>Kexin Zhang</b>, Elmira Deldari, Yaxing Yao, and Yuhang Zhao.</p>
+                        <p>ASSETS 2023</p>
+                        <div class="project-buttons">
+                            <a href="#" class="abs-button">abstract</a>
+                            <a href="https://dl.acm.org/doi/abs/10.1145/3597638.3608388">doi</a>
+                        </div>
+                    </div>
+                    <div class="abstract">
+                        People with disabilities (PWD) have shown a growing presence in the emerging social virtual reality (VR). To support disability representation, some social VR platforms start to involve disability features in avatar design. However, it is unclear how disability disclosure via avatars (and the way to present it) would affect PWD’s social experiences and interaction dynamics with others. To fill this gap, we conducted a diary study with 10 PWD who freely explored VRChat—a popular commercial social VR platform—for two weeks, comparing their experiences between using regular avatars and avatars with disability signifiers (i.e., avatar features that indicate the user’s disability in real life). We found that PWD preferred using avatars with disability signifiers and wanted to further enhance their aesthetics and interactivity. However, such avatars also caused embodied, explicit harassment targeting PWD. We revealed the unique factors that led to such harassment and derived design implications and protection mechanisms to inspire more safe and inclusive social VR.
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/150" alt="Project 1">
+                <div>
+                    <div class="project-details">
+                        <h3>“It’s Just Part of Me:” Understanding Avatar Diversity and Self-presentation of People with Disabilities in Social Virtual Reality.</h3>
+                        <p class="authors"><b>Kexin Zhang</b>, Elmira Deldari, Zhicong Lu, Yaxing Yao, and Yuhang Zhao.</p>
+                        <p>ASSETS 2022</p>
+                        <div class="project-buttons">
+                            <a href="#" class="abs-button">abstract</a>
+                            <a href="https://dl.acm.org/doi/10.1145/3517428.3544829">doi</a>
+                            <a href="https://arxiv.org/pdf/2208.11170">arxiv</a>
+                        </div>
+                    </div>
+                    <div class="abstract">
+                        In social Virtual Reality (VR), users are embodied in avatars and interact with other users in a face-to-face manner using avatars as the medium. With the advent of social VR, people with disabilities (PWD) have shown an increasing presence on this new social media. With their unique disability identity, it is not clear how PWD perceive their avatars and whether and how they prefer to disclose their disability when presenting themselves in social VR. We fill this gap by exploring PWD’s avatar perception and disability disclosure preferences in social VR. Our study involved two steps. We first conducted a systematic review of fifteen popular social VR applications to evaluate their avatar diversity and accessibility support. We then conducted an in-depth interview study with 19 participants who had different disabilities to understand their avatar experiences. Our research revealed a number of disability disclosure preferences and strategies adopted by PWD (e.g., reflect selective disabilities, present a capable self). We also identified several challenges faced by PWD during their avatar customization process. We discuss the design implications to promote avatar accessibility and diversity for future social VR platforms.
+                    </div>
+                </div>
+            </div>
+            <h3><italic>Poster</italic></h3>
+            <div class="project">
+                <img src="https://via.placeholder.com/150" alt="Project 1">
+                <div>
+                    <div class="project-details">
+                        <h3>“Invisible Illness Is No Longer Invisible”: Making Social VR Avatars More Inclusive for Invisible Disability Representation.</h3>
+                        <p class="authors">Ria J Gualano*, Lucy Jiang*, <b>Kexin Zhang*</b>, Andrea Stevenson Won, Shiri Azenkot.</p>
+                        <p>ASSETS 2023</p>
+                        <div class="project-buttons">
+                            <a href="#" class="abs-button">abstract</a>
+                            <a href="https://dl.acm.org/doi/abs/10.1145/3597638.3614480">doi</a>
+                        </div>
+                    </div>
+                    <div class="abstract">
+                        As social virtual reality (VR) experiences become more popular, it is critical to design accessible and inclusive embodied avatars. At present, there are few, if any, customization features for invisible disabilities (e.g., chronic health conditions, mental health conditions, neurodivergence) in social VR platforms. To our knowledge, researchers have yet to explore how people with invisible disabilities want to self-represent and disclose disabilities through social VR avatars. We fill this gap in current accessibility research by centering the experiences and preferences of people with invisible disabilities. We conducted semi-structured interviews with nine participants and found that people with invisible disabilities used a unique, indirect approach to inform dynamic disclosure practices. Participants were interested in toggling representation on/off across contexts and shared ideas for representation through avatar design. In addition, they proposed ways to make the customization process more accessible (e.g., making it easier to import custom designs). We see our work as a vital contribution to the growing literature that calls for more inclusive social VR.
+                    </div>
+                </div>
+            </div>
+            <!-- Add more projects here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kexin Zhang. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const absButtons = document.querySelectorAll('.abs-button');
+            absButtons.forEach(button => {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const abstract = this.closest('.project-details').nextElementSibling;
+                    if (abstract.style.display === 'none' || abstract.style.display === '') {
+                        abstract.style.display = 'block';
+                    } else {
+                        abstract.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
