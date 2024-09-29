@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kexin Zhang</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Include Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1em; /* Adjust the size as needed */
+            font-style: normal;
+            font-weight: 400; /* Regular weight */
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
-            color: #000000;
+            color: #202020;
+            line-height: 1.6; /* Increase line-height for better readability */
         }
+
         header {
             padding: 20px 10px;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end; /* Aligns the navigation to the right */
             align-items: center;
-            max-width: 1000px;
+            max-width: 850px;
             margin: auto;
+            color: #202020; 
         }
+
         nav ul {
             list-style: none;
             padding: 0;
@@ -28,39 +38,48 @@
             display: flex;
             gap: 20px;
         }
+
         nav ul li {
             margin: 0;
         }
+
         nav ul li a {
             text-decoration: none;
             color: #040404;
-            
-            font-size: 1.3em;
+            font-size: 1.2em;
             transition: color 0.3s;
         }
+
         nav ul li a.active {
-            color: #0a4202;
+            color: #000000;
         }
+
         nav ul li a:hover {
             color: #125609;
         }
+
         main {
             padding: 20px;
-            max-width: 1000px;
+            max-width: 850px;
             margin: auto;
         }
-        .about-me {
+
+        .about-me { 
             display: flex;
             align-items: flex-start; /* Align items at the start */
-            padding: 20px 0;
+            padding: 10px 0;
         }
+
         .about-me .text {
             flex: 1;
-            font-size: 1.3em;
+            font-size: 1.1em;
         }
+
         .about-me .text h2 {
             margin: 0; /* Remove default margin */
+            font-weight: 600; /* Use bold weight for heading */
         }
+
         .profile-pic {
             width: 230px;
             height: 230px;
@@ -68,51 +87,69 @@
             object-fit: cover;
             margin-top: 55px; /* Adjust this value to align with the text */
         }
+
         .contact-icons {
             display: flex;
             gap: 15px;
             margin-top: 10px;
         }
+
         .contact-icons a {
             text-decoration: none;
-            color: #000000;
-            font-size: 1.3em;
+            color: #393838;
+            font-size: 1.5em;
         }
+
+        .contact-icons a i {
+            font-style: normal; /* Ensure icons use normal font style */
+        }
+
         .projects {
             margin-bottom: 40px;
         }
+
         .projects h2 {
             text-align: left;
+            font-weight: 600; /* Use bold weight for heading */
         }
+
         .project {
             display: flex;
             align-items: flex-start;
             padding: 20px 0;
             margin-bottom: 20px;
         }
+
         .project img {
             width: 230px;
             height: 150px;
             margin-right: 20px;
         }
+
         .project-details {
             flex: 1;
             font-size: 1em;
         }
+
         .project-details h3 {
             margin-top: 0;
+            font-weight: 600; /* Use bold weight for sub-heading */
         }
+
         .project-details p {
             margin: 5px 0;
         }
+
         .project-details .authors {
             color: #000000;
         }
+
         .project-buttons {
             display: flex;
             gap: 10px;
             margin-top: 10px;
         }
+
         .project-buttons a {
             text-decoration: none;
             color: #333;
@@ -120,33 +157,38 @@
             padding: 5px 10px;
             transition: background-color 0.3s, color 0.3s;
         }
+
         .project-buttons a:hover {
             background-color: #333;
             color: #fff;
         }
+
         .abstract {
             display: none;
             border: 1px dashed #333;
             padding: 10px;
             margin-top: 10px;
         }
+
         footer {
             text-align: center;
             padding: 20px;
         }
+
+        /* Smooth scrolling effect */
+        html {
+            scroll-behavior: smooth;
+        }
+
     </style>
 </head>
-
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#home" class="active">Home</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#cv">CV</a></li>
             </ul>
         </nav>
@@ -156,45 +198,47 @@
         <section id="about" class="about-me">
             <div class="text">
                 <h2>Kexin Zhang</h2>
-                <p>I am a PhD student in Computer Sciences at the University of Wisconsin-Madison, advised by Yuhang Zhao. My research interests include Human-Computer Interaction (HCI), accessibility, and AR/VR. </p>
-                <p>Previsouly, </p>
+                <p>I am a PhD student in Computer Sciences at the University of Wisconsin-Madison, advised by Yuhang Zhao. My research interests include Human-Computer Interaction (HCI), accessibility, and AR/VR.</p>
+                <p>Previously, I was a research intern at ... </p>
                 <div class="contact-icons">
                     <a href="mailto:kzhang284@wisc.edu"><i class="fas fa-envelope"></i></a>
                     <a href="https://scholar.google.com/citations?user=RNoZyNoAAAAJ&hl=en" target="_blank">
                         <i class="fas fa-graduation-cap"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/kexin-zhang0201/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <!-- <a href="#"><i class="fab fa-github"></i></a> -->
                     <a href="https://x.com/kexinzhang0201" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
-            <img src="https://raw.githubusercontent.com/kexinz21/kexinz21.github.io/main/images/profile_pic_small.png
-            " alt="Kexin Zhang" class="profile-pic">
+            <img src="https://raw.githubusercontent.com/kexinz21/kexinz21.github.io/main/images/profile_pic_small.png" alt="Kexin Zhang" class="profile-pic">
         </section>
-        
 
         <section id="projects" class="projects">
             <h2>Publications</h2>
-            <div class="project">
-                <img src="https://raw.githubusercontent.com/kexinz21/kexinz21.github.io/main/images/chi'24.png" alt="chi24">
-                <div>
-                    <div class="project-details">
-                        <h3>Exploring the Design Space of Optical See-through AR Head-Mounted Displays to Support First Responders in the Field</h3>
-                        <p class="authors"><b>Kexin Zhang</b>, Brianna Cochran, Ruijia Chen, Lance Hartung, Bryce Sprecher, Ross Tredinnick, Kevin Ponto, Suman Banerjee, Yuhang Zhao.</p>
-                        <p>CHI 2024</p>
-                        <div class="project-buttons">
-                            <a href="#" class="abs-button">abstract</a>
-                            <a href="https://dl.acm.org/doi/full/10.1145/3613904.3642195">doi</a>
+            <p>* = equal contribution</p>
+            <ul>
+                <li>
+                    <div class="project">
+                        <!-- <img src="https://raw.githubusercontent.com/kexinz21/kexinz21.github.io/main/images/chi'24.png" alt="chi24"> -->
+                        <div>
+                            <div class="project-details">
+                                <h3>Exploring the Design Space of Optical See-through AR Head-Mounted Displays to Support First Responders in the Field</h3>
+                                <p class="authors"><b>Kexin Zhang</b>, Brianna Cochran, Ruijia Chen, Lance Hartung, Bryce Sprecher, Ross Tredinnick, Kevin Ponto, Suman Banerjee, Yuhang Zhao.</p>
+                                <p>CHI 2024</p>
+                                <div class="project-buttons">
+                                    <a href="#" class="abs-button">abstract</a>
+                                    <a href="https://dl.acm.org/doi/full/10.1145/3613904.3642195">doi</a>
+                                </div>
+                            </div>
+                            <div class="abstract">
+                                First responders (FRs) navigate hazardous, unfamiliar environments in the field (e.g., mass-casualty incidents), making life-changing decisions in a split second. AR head-mounted displays (HMDs) have shown promise in supporting them due to its capability of recognizing and augmenting the challenging environments in a hands-free manner. However, the design space have not been thoroughly explored by involving various FRs who serve different roles (e.g., firefighters, law enforcement) but collaborate closely in the field. We interviewed 26 first responders in the field who experienced a state-of-the-art optical-see-through AR HMD, as well as its interaction techniques and four types of AR cues (i.e., overview cues, directional cues, highlighting cues, and labeling cues), soliciting their first-hand experiences, design ideas, and concerns. Our study revealed both generic and role-specific preferences and needs for AR hardware, interactions, and feedback, as well as identifying desired AR designs tailored to urgent, risky scenarios (e.g., affordance augmentation to facilitate fast and safe action). While acknowledging the value of AR HMDs, concerns were also raised around trust, privacy, and proper integration with other equipment. Finally, we derived comprehensive and actionable design guidelines to inform future AR systems for in-field FRs.
+                            </div>
                         </div>
                     </div>
-                    <div class="abstract">
-                        First responders (FRs) navigate hazardous, unfamiliar environments in the field (e.g., mass-casualty incidents), making life-changing decisions in a split second. AR head-mounted displays (HMDs) have shown promise in supporting them due to its capability of recognizing and augmenting the challenging environments in a hands-free manner. However, the design space have not been thoroughly explored by involving various FRs who serve different roles (e.g., firefighters, law enforcement) but collaborate closely in the field. We interviewed 26 first responders in the field who experienced a state-of-the-art optical-see-through AR HMD, as well as its interaction techniques and four types of AR cues (i.e., overview cues, directional cues, highlighting cues, and labeling cues), soliciting their first-hand experiences, design ideas, and concerns. Our study revealed both generic and role-specific preferences and needs for AR hardware, interactions, and feedback, as well as identifying desired AR designs tailored to urgent, risky scenarios (e.g., affordance augmentation to facilitate fast and safe action). While acknowledging the value of AR HMDs, concerns were also raised around trust, privacy, and proper integration with other equipment. Finally, we derived comprehensive and actionable design guidelines to inform future AR systems for in-field FRs.
-                    </div>
-                </div>
-            </div>
+                </li>
+            </ul>    
             
             <div class="project">
-                <img src="https://raw.githubusercontent.com/kexinz21/kexinz21.github.io/main/images/assets'24.png" alt="assets24">
+                <!-- <img src="https://raw.githubusercontent.com/kexinz21/kexinz21.github.io/main/images/assets'24.png" alt="assets24"> -->
                 <div>
                     <div class="project-details">
                         <h3>"I Try to Represent Myself as I Am": Self-Presentation Preferences of People with Invisible Disabilities through Embodied Social VR Avatars</h3>
@@ -212,7 +256,7 @@
             </div>
 
             <div class="project">
-                <img src="https://raw.githubusercontent.com/kexinz21/kexinz21.github.io/main/images/assets'23.png" alt="assets23">
+                <!-- <img src="https://raw.githubusercontent.com/kexinz21/kexinz21.github.io/main/images/assets'23.png" alt="assets23"> -->
                 <div>
                     <div class="project-details">
                         <h3>A diary study in social virtual reality: Impact of avatars with disability signifiers on the social experiences of people with disabilities</h3>
@@ -230,7 +274,7 @@
             </div>
 
             <div class="project">
-                <img src="https://raw.githubusercontent.com/kexinz21/kexinz21.github.io/main/images/assets'23_poster.png" alt="assets23_poster">
+                <!-- <img src="https://raw.githubusercontent.com/kexinz21/kexinz21.github.io/main/images/assets'23_poster.png" alt="assets23_poster"> -->
                 <div>
                     <div class="project-details">
                         <h3>“Invisible Illness Is No Longer Invisible”: Making Social VR Avatars More Inclusive for Invisible Disability Representation.</h3>
@@ -248,7 +292,7 @@
             </div>
 
             <div class="project">
-                <img src="https://raw.githubusercontent.com/kexinz21/kexinz21.github.io/main/images/assets'22.png" alt="assets22">
+                <!-- <img src="https://raw.githubusercontent.com/kexinz21/kexinz21.github.io/main/images/assets'22.png" alt="assets22"> -->
                 <div>
                     <div class="project-details">
                         <h3>“It’s Just Part of Me:” Understanding Avatar Diversity and Self-presentation of People with Disabilities in Social Virtual Reality</h3>
@@ -272,21 +316,22 @@
     <footer>
         <p>&copy; 2024 Kexin Zhang. All rights reserved.</p>
     </footer>
+
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const absButtons = document.querySelectorAll('.abs-button');
-            absButtons.forEach(button => {
-                button.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    const abstract = this.closest('.project-details').nextElementSibling;
-                    if (abstract.style.display === 'none' || abstract.style.display === '') {
-                        abstract.style.display = 'block';
-                    } else {
-                        abstract.style.display = 'none';
-                    }
+            document.addEventListener('DOMContentLoaded', function () {
+                const absButtons = document.querySelectorAll('.abs-button');
+                absButtons.forEach(button => {
+                    button.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        const abstract = this.closest('.project-details').nextElementSibling;
+                        if (abstract.style.display === 'none' || abstract.style.display === '') {
+                            abstract.style.display = 'block';
+                        } else {
+                            abstract.style.display = 'none';
+                        }
+                    });
                 });
             });
-        });
-    </script>
-</body>
-</html>
+        </script>
+    </body>
+    </html>
