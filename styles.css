@@ -1,5 +1,4 @@
-/* styles.css */
-
+/* General body styling */
 body {
     font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
     font-size: 1em;
@@ -12,49 +11,84 @@ body {
     line-height: 1.6;
 }
 
+/* Header with flexbox for left-align name and right-align links */
+/* Header styling */
 header {
-    padding: 20px 10px;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
     max-width: 850px;
     margin: auto;
-    color: #202020;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+/* Brand name styling */
+.brand-name {
+    font-size: 1.5em;
+    font-weight: 600;
     margin: 0;
+}
+
+/* Style for the brand name link */
+.brand-name a {
+    text-decoration: none; /* Remove underline */
+    color: #000;           /* Set text color to black */
+}
+
+/* Ensure the visited link does not change color */
+.brand-name a:visited {
+    color: #000;
+}
+
+/* Optional: Add a hover effect */
+.brand-name a:hover {
+    color: #125609;        /* Change color on hover */
+}
+
+/* Navigation styling */
+nav {
+    /* No additional styles needed */
+}
+
+/* Adjusted selector to match your HTML structure */
+.nav-links {
     display: flex;
-    gap: 20px;
-}
-
-nav ul li {
+    list-style: none;
     margin: 0;
+    padding: 0;
 }
 
-nav ul li a {
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li:first-child {
+    margin-left: 0;
+}
+
+.nav-links li a {
     text-decoration: none;
     color: #040404;
     font-size: 1.2em;
     transition: color 0.3s;
 }
 
-nav ul li a.active {
+.nav-links li a.active {
     color: #000000;
 }
 
-nav ul li a:hover {
+.nav-links li a:hover {
     color: #125609;
 }
 
+/* Main content styling */
 main {
     padding: 20px;
     max-width: 850px;
     margin: auto;
 }
 
+/* About me section */
 .about-me {
     display: flex;
     align-items: flex-start;
@@ -71,6 +105,7 @@ main {
     font-weight: 600;
 }
 
+/* Profile picture styling */
 .profile-pic {
     width: 230px;
     height: 230px;
@@ -79,6 +114,7 @@ main {
     margin-top: 55px;
 }
 
+/* Contact icons */
 .contact-icons {
     display: flex;
     gap: 15px;
@@ -95,6 +131,7 @@ main {
     font-style: normal;
 }
 
+/* Publications and CV sections */
 .publications, .cv-section {
     margin-bottom: 40px;
 }
@@ -104,14 +141,15 @@ main {
     font-weight: 600;
 }
 
+/* Publication details */
 .publication {
     display: flex;
     align-items: flex-start;
     padding: 20px 0;
     margin-bottom: 20px;
     position: relative;
-    min-height: 150px; /* Ensures enough height for each publication */
-    padding-right: 120px; /* Allows space for the time-bar */
+    min-height: 150px;
+    padding-right: 120px;
 }
 
 .publication img {
@@ -138,6 +176,7 @@ main {
     color: #000000;
 }
 
+/* Buttons in publication section */
 .publication-buttons {
     display: flex;
     gap: 10px;
@@ -157,6 +196,7 @@ main {
     color: #fff;
 }
 
+/* Abstract styling */
 .abstract {
     display: none;
     border: 1px dashed #333;
@@ -164,18 +204,20 @@ main {
     margin-top: 10px;
 }
 
+/* Time-bar for year in publication */
 .time-bar {
     font-size: 2em;
     color: #d3d3d3;
     position: absolute;
-    right: 10px;  /* Aligns to the right of the publication block */
-    top: 10%;  /* Vertically center */
+    right: 10px;
+    top: 10%;
     transform: translateY(-50%);
     font-weight: lighter;
     text-align: right;
     white-space: nowrap;
 }
 
+/* Footer styling */
 footer {
     text-align: center;
     padding: 20px;
