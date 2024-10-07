@@ -18,7 +18,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 10px;
-    max-width: 850px;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -42,12 +42,11 @@ header {
 
 /* Optional: Add a hover effect */
 .brand-name a:hover {
-    color: #125609;        /* Change color on hover */
+    color: #125609;  
 }
 
 /* Navigation styling */
 nav {
-    /* No additional styles needed */
 }
 
 /* Adjusted selector to match your HTML structure */
@@ -55,7 +54,7 @@ nav {
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 .nav-links li {
@@ -84,53 +83,66 @@ nav {
 /* Main content styling */
 main {
     padding: 20px;
-    max-width: 850px;
+    max-width: 900px;
     margin: auto;
 }
 
 /* About me section */
 .about-me {
     display: flex;
-    align-items: flex-start;
-    padding: 10px 0;
+    align-items: flex-start; /* Ensure alignment at the top */
+    padding: 0; /* Remove extra padding */
 }
 
 /* Profile picture styling */
 .profile-pic {
     width: 230px;
     height: 230px;
-    margin-left: 0px;
     object-fit: cover;
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
     margin-top: 20px;
 }
 
+/* About me text styling */
 .about-me .text {
-    flex: 1;
+    flex: 1; /* Allow the text to take up remaining space */
     font-size: 1.1em;
+    margin: 0; /* Remove default margin */
+    margin-left: 20px; /* Adjust spacing between the image and text */
+    padding: 0; /* Remove any padding */
 }
 
-.about-me .text h2 {
-    margin: 0;
-    font-weight: 600;
-    margin-left: 40px;
+.about-me .text a {
+    color: black; /* Set the link color to green */
+   /*text-decoration: none; /* Optionally remove the underline */
 }
 
 /* Contact icons */
 .contact-icons {
     display: flex;
-    gap: 15px;
-    margin-top: 10px;
+    justify-content: center; /* Centers the icons horizontally */
+    gap: 20px; /* Adjust gap to control the spacing between icons */
+    margin-top: 10px; /* Space between image and icons */
 }
 
+/* Individual icon styling */
 .contact-icons a {
+    font-size: 1.8em; /* Adjust size as needed for larger icons */
+    color: #333; /* Set the icon color */
     text-decoration: none;
-    color: #393838;
-    font-size: 1.5em;
+}
+
+.contact-icons a:hover {
+    color: #025609; /* Optional: Change color on hover */
 }
 
 .contact-icons a i {
-    font-style: normal;
+    display: inline-block; /* Ensure icons align properly */
 }
+
+
+
 
 /* Publications and CV sections */
 .publications, .cv-section {
@@ -205,6 +217,8 @@ main {
     margin-top: 10px;
 }
 
+
+
 /* Time-bar for year in publication */
 .time-bar {
     font-size: 2em;
@@ -217,6 +231,8 @@ main {
     text-align: right;
     white-space: nowrap;
 }
+
+
 
 /* Footer styling */
 footer {
