@@ -95,6 +95,15 @@ main {
     padding: 10px 0;
 }
 
+/* Profile picture styling */
+.profile-pic {
+    width: 230px;
+    height: 230px;
+    margin-left: 0px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
 .about-me .text {
     flex: 1;
     font-size: 1.1em;
@@ -103,15 +112,7 @@ main {
 .about-me .text h2 {
     margin: 0;
     font-weight: 600;
-}
-
-/* Profile picture styling */
-.profile-pic {
-    width: 230px;
-    height: 230px;
-    margin-left: 30px;
-    object-fit: cover;
-    margin-top: 55px;
+    margin-left: 40px;
 }
 
 /* Contact icons */
