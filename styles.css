@@ -97,7 +97,7 @@ main {
 /* Profile picture styling */
 .profile-pic {
     width: 230px;
-    height: 230px;
+    height: 300px;
     object-fit: cover;
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
@@ -107,9 +107,9 @@ main {
 /* About me text styling */
 .about-me .text {
     flex: 1; /* Allow the text to take up remaining space */
-    font-size: 1.1em;
+    font-size: 1em;
     margin: 0; /* Remove default margin */
-    margin-left: 20px; /* Adjust spacing between the image and text */
+    margin-left: 40px; /* Adjust spacing between the image and text */
     padding: 0; /* Remove any padding */
 }
 
@@ -167,7 +167,7 @@ main {
 
 .publication img {
     width: 230px;
-    height: 150px;
+    height: 120px;
     margin-right: 20px;
 }
 
