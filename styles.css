@@ -47,7 +47,8 @@ header {
 
 /* Navigation styling */
 nav {
-}
+    display: block; /* Example property */
+  }
 
 /* Adjusted selector to match your HTML structure */
 .nav-links {
