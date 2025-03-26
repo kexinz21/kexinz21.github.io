@@ -42,7 +42,7 @@ header {
 
 /* Optional: Add a hover effect */
 .brand-name a:hover {
-    color: #125609;  
+    color: #142377;  
 }
 
 /* Navigation styling */
@@ -78,7 +78,7 @@ nav {
 }
 
 .nav-links li a:hover {
-    color: #125609;
+    color: #142377;
 }
 
 /* Main content styling */
@@ -128,7 +128,7 @@ main {
 }
 
 .contact-icons a:hover {
-    color: #025609; /* Optional: Change color on hover */
+    color: #142377; /* Optional: Change color on hover */
 }
 
 .contact-icons a i {
