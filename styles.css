@@ -104,8 +104,8 @@ main {
 
 /* Profile picture styling */
 .profile-pic {
-    width: 260px;
-    height: 360px;
+    width: 250px;
+    height: 340px;
     object-fit: cover;
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
@@ -115,9 +115,9 @@ main {
 /* Contact icons */
 .contact-icons {
     display: flex;
-    justify-content: center; /* Centers the icons horizontally */
+    justify-content: center;
     gap: 15px; /* Adjust gap to control the spacing between icons */
-    margin-top: 5px; /* Space between image and icons */
+    margin-top: 5px;
 }
 
 /* Individual icon styling */
