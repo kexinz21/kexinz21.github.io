@@ -104,8 +104,8 @@ main {
 
 /* Profile picture styling */
 .profile-pic {
-    width: 230px;
-    height: 400px;
+    width: 260px;
+    height: 360px;
     object-fit: cover;
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
