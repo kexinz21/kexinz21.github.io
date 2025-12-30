@@ -15,8 +15,12 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px 10px;
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1000;
 }
 
 .brand-name {
@@ -98,7 +102,7 @@ a:hover {
 
 main {
   padding: 20px;
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
 }
 
@@ -119,8 +123,8 @@ main {
 }
 
 .profile-pic {
-  width: 245px;
-  height: 335px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   margin-top: 20px;
 }
@@ -223,7 +227,7 @@ html {
 
 /* Main container for publications */
 .publications {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
     font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
 }
